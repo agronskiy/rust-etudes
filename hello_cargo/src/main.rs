@@ -1,11 +1,13 @@
 fn main() {
-    let y = my_func();
+    let y = my_func() + 10;
     println!("Hello, world, number is {y}!");
 }
 
 fn my_func() -> i64 {
     let x: i64 = 10;
-    x
+    let y = x + 10;
+    let z = y + 10;
+    return z;
 }
 
 #[test]
