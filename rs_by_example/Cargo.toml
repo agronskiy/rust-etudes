@@ -1,19 +1,6 @@
-[package]
-name = "rs_by_example"
-version = "0.1.0"
-edition = "2021"
+[workspace]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+members = [
+  "rs_yaml_parser_with_test",
+]
 
-[dependencies]
-clap = { version = "4.4.11", features = [ "derive" ] }
-yaml-rust = "0.4"
-
-[[bin]]
-name = "rs_hello"
-
-[[bin]]
-name = "rs_lifetime"
-
-[[bin]]
-name = "rs_yaml_parser_with_test"
