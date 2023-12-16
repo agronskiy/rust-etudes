@@ -6,6 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.4.11", features = [ "derive" ] }
+yaml-rust = "0.4"
 
 [[bin]]
 name = "rs_hello"
+
+[[bin]]
+name = "rs_lifetime"
+
+[[bin]]
+name = "rs_yaml_parser_with_test"
