@@ -29,6 +29,10 @@ crates_repository(
         "//:Cargo.toml",
         "//main_bin_crate:Cargo.toml",
     ],
+    supported_platform_triples = [
+        "x86_64-apple-darwin",
+        "x86_64-unknown-linux-gnu",
+    ],
 )
 
 load("@crate_index//:defs.bzl", "crate_repositories")
